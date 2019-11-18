@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0 0 50px 0;
+    background: linear-gradient(135deg, rgba(127, 37, 201, 0.85) 0%, rgba(127, 37, 201, 1) 25%, rgba(100, 32, 299, 1) 75%, rgba(100, 32, 299, 0.95) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.particlesDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logoTilt {
+    background: linear-gradient(to top right, rgb(230, 20, 100), rgb(150, 10, 50));
+    transition: 0.3s;
+    box-shadow: -1px 2px 5px rgba(0,0,0,0.3);
+}
+
+.logoTilt:hover {
+    box-shadow: -2px 3px 15px rgba(0,0,0,0.4);
+}
+
+.Tilt-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Tilt-inner p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.rankBox {
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.inputDiv {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.mainBtn {
+    height: 43px;
+    background: purple;
+    width: 30%;
+    transition: all 0.3s;
+}
+
+.faceRecDiv {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.faceRecDiv img {
+    max-width: 800px;
+}
+
+.mainBtn:hover {
+    background: rgb(70, 0, 70);
+}
+
+.boundingBox {
+    position: absolute;
+    box-shadow: 0 0 0 3px #8451ff inset;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        top: 10px;
+        left: 20px;
+        margin-left: 0 !important;
+    }
+
+    .inputDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainInput {
+        margin-bottom: 20px;
+    }
+
+    .mainBtn {
+        width: 50%;
+    }
+}
